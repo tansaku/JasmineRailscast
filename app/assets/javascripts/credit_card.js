@@ -3,6 +3,6 @@
  */
 var CreditCard = {
     cleanNumber: function(number) {
-        return number.replace(/[- ]/, "");
+        return number.replace(/[- ]/g, "");
     }
 }
