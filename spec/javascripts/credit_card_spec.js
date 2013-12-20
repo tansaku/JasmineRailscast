@@ -14,6 +14,10 @@ describe("CreditCard", function() {
         $("#card_number").val("123");
         $("#card_number").blur();
         expect($("#card_number_error").text()).toEqual("Invalid credit card number.");
+
+        $("#card_number").val("4111 1111 1111-1111");
+        $("#card_number").blur();
+        expect($("#card_number_error").text()).toEqual("");
     });
 });
 

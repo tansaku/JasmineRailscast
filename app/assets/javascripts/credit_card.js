@@ -27,6 +27,9 @@ var CreditCard = {
                 if (!CreditCard.validNumber(this.value)) {
                     $("#" + this.id + "_error").text("Invalid credit card number.");
                 }
+                else {
+                    $("#" + this.id + "_error").text("");
+                }
             });
         });
     };
