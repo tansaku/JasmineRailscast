@@ -5,7 +5,7 @@ describe("CreditCard", function() {
 
     it("validates based on mod 10", function () {
         expect(CreditCard.validNumber ("4111 1111 1111-1111")).toBeTruthy();
-        expect(CreditCard.validNumber ("4111 1111 1111-1111")).toBeFalsy();
+        expect(CreditCard.validNumber ("4111 1111 1211-1111")).toBeFalsy();
     });
 });
 
